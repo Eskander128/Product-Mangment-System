@@ -4,10 +4,6 @@ A dynamic and responsive Product Management System (CRUDS) built with Vanilla Ja
 
 A fully functional, client-side **Product Management System** designed to handle CRUD (Create, Read, Update, Delete) operations efficiently. This project showcases dynamic UI updates, strict data handling, and data persistence without any backend dependencies.
 
-## 🚀 Live Demo
-*Coming Soon / Add your GitHub Pages link here*
-
----
 
 ## ✨ Features
 
@@ -27,24 +23,8 @@ A fully functional, client-side **Product Management System** designed to handle
 
 ---
 
-## 📸 Screenshots
-
-| Control Panel & Calculations | Dynamic Data Table |
-|---|---|
-| *Add your screenshot link here* | *Add your screenshot link here* |
-
----
-
 ## 🧠 Key Learnings from this Project
 
 1. **DOM Manipulation:** Deepened understanding of traversing and updating the DOM dynamically using template literals and strict ID targeting.
 2. **State & Storage Synchronization:** Mastering the sequence of updating the local array before stringifying and writing to the storage API to prevent UI stutter.
 3. **Debugging:** Gained heavy experience in tracing syntax errors, missing escape quotes, and `TypeError` events directly from the browser console.
-
----
-
-## ⚙️ How to Run Locally
-
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Eskander128/Product-Mangment-System.git](https://github.com/Eskander128/Product-Mangment-System.git)
