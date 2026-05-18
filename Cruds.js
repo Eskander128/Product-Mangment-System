@@ -55,11 +55,13 @@ createEl.onclick = function(){
         }else{
                 productsData.push(productDetails);
             }
+
     }else{
         productsData[tmp] = productDetails;
-        mood= 'create';
-        createEl.innerHTML = 'CreateMode';
-        countEl.style.display = 'block'
+        mode = 'createMode';
+        createEl.innerHTML = 'Create';
+        countEl.style.display = 'block';
+        alert('✅ Product has been updated successfully!'); 
     }
 
 
@@ -114,15 +116,19 @@ function showData(){
 showData();
 
 function deleteData(i){
-    productsData.splice(i,1);
-    localStorage.product = JSON.stringify(productsData)
-    showData()
+    if(confirm('Are you sure you want to delete this product?')){
+        productsData.splice(i, 1);
+        localStorage.setItem('product', JSON.stringify(productsData));
+        showData();
+    }
 }
 
 function deleteAll(){
-    productsData.length = 0;
-    localStorage.clear()
-    showData()
+    if(confirm('Are you sure you want to delete ALL products?')){
+        productsData.splice(0);
+        localStorage.clear();
+        showData();
+    }
 }
 
 function updateData(i){
